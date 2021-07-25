@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="platziLogoHeight">45dp</dimen>
+    <dimen name="toolbarHeight">30dp</dimen>
+    <dimen name="cardCornerRadius">4dp</dimen>
+    <dimen name="HomeCardImageViewHeight">150dp</dimen>
+    <dimen name="HomeCardTitleMargin">10dp</dimen>
+
+<!--   textos y fuentes -->
+    <dimen name="HomeCardTitleSize">20sp</dimen>
+    <dimen name="HomeCardBodySize">15sp</dimen>
+</resources>
