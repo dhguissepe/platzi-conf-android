@@ -1,14 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.SpeakersDetailDialogFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.SpeakerDetailDialogFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Toolbar
+            android:id="@+id/tbSpeaker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="?attr/actionBarSize">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-</FrameLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/SpeakerDetailImageHeight"
+                    android:src="@mipmap/ic_launcher" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/DefaultCardCornerRadius"
+                    app:cardElevation="@dimen/SpeakerDetailCardElevation"
+                    android:layout_margin="@dimen/SpeakerDetailCardMargin">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvDetailSpeakerName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nombre del expositor"
+                            android:textSize="@dimen/DetailSpeakerName"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal" />
+
+                        <TextView
+                            android:id="@+id/tvDetailSpeakerJobTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Job title"
+                            android:textSize="@dimen/DetailSpeakerJobTitle"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center_horizontal" />
+
+                        <TextView
+                            android:id="@+id/tvDetailSpeakerJob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Trabajo"
+                            android:textSize="@dimen/DetailSpeakerJob"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/SpeakerDetailIconHeight"
+                            android:src="@drawable/ic_twitter_icon"
+                            android:layout_margin="@dimen/SpeakerDetailIconMargin"/>
+
+                        <TextView
+                            android:id="@+id/tvDetailSpeakerDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Descripción"
+                            android:textSize="@dimen/DetailSpeakerDescription"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center_horizontal" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

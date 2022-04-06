@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/DefaultCardCornerRadius"
+    app:cardElevation="@dimen/DefaultCardViewElevation"
+    android:layout_margin="@dimen/SpeakerItemMargin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/SpeakerItemImageViewHeight"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="@dimen/SpeakerItemImageMargin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre expositor"
+            android:textStyle="bold"
+            android:textSize="@dimen/SpeakerItemCardTitleSize"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="trabajo expositor"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/SpeakerItemCardBodySize" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

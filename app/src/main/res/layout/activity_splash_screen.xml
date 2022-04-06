@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/ivLogoPlatziConf"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/platziLogoHeight"
+        android:layout_height="@dimen/PlatziLogoHeight"
         android:src="@drawable/logo_platzi_conf"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

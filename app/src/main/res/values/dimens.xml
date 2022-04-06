@@ -1,12 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="platziLogoHeight">45dp</dimen>
-    <dimen name="toolbarHeight">30dp</dimen>
-    <dimen name="cardCornerRadius">4dp</dimen>
+<!--    general dimension -->
+    <dimen name="PlatziLogoHeight">45dp</dimen>
+    <dimen name="ToolbarHeight">30dp</dimen>
+    <dimen name="DefaultCardCornerRadius">4dp</dimen>
+    <dimen name="DefaultCardViewElevation">4dp</dimen>
+    <dimen name="DefaultLoaderOverlayAlpha">0.4</dimen>
+
+<!--    fragment_home.xml -->
     <dimen name="HomeCardImageViewHeight">150dp</dimen>
     <dimen name="HomeCardTitleMargin">10dp</dimen>
+    <dimen name="HomeCardViewMargin">15dp</dimen>
 
-<!--   textos y fuentes -->
     <dimen name="HomeCardTitleSize">20sp</dimen>
     <dimen name="HomeCardBodySize">15sp</dimen>
+
+<!--    fragment_speaker.xml -->
+
+<!--    fragment_speaker_detail_dialog.xml -->
+    <dimen name="SpeakerDetailCardElevation">1dp</dimen>
+    <dimen name="SpeakerDetailCardMargin">5dp</dimen>
+    <dimen name="SpeakerDetailIconHeight">40dp</dimen>
+    <dimen name="SpeakerDetailIconMargin">10dp</dimen>
+    <dimen name="SpeakerDetailImageHeight">200dp</dimen>
+
+    <dimen name="DetailSpeakerName">20sp</dimen>
+    <dimen name="DetailSpeakerJobTitle">12sp</dimen>
+    <dimen name="DetailSpeakerJob">15sp</dimen>
+    <dimen name="DetailSpeakerDescription">15sp</dimen>
+
+<!--    item_speaker -->
+    <dimen name="SpeakerItemImageMargin">10dp</dimen>
+    <dimen name="SpeakerItemImageViewHeight">150dp</dimen>
+    <dimen name="SpeakerItemMargin">5dp</dimen>
+
+    <dimen name="SpeakerItemCardTitleSize">20sp</dimen>
+    <dimen name="SpeakerItemCardBodySize">15sp</dimen>
+
+<!--    fragment_schedule.xml -->
+
+<!--    fragment_schedule_detail_dialog.xml -->
+
+    <dimen name="ScheduleDetailCardMargin">15dp</dimen>
+    <dimen name="ScheduleDetailTextMargin">5dp</dimen>
+    <dimen name="ScheduleDetailImageHeight">200dp</dimen>
+
+    <dimen name="ScheduleDetailConferenceTitle">30sp</dimen>
+    <dimen name="ScheduleDetailConferenceHour">15sp</dimen>
+    <dimen name="ScheduleDetailConferenceSpeakerName">20sp</dimen>
+    <dimen name="ScheduleDetailConferenceTag">12sp</dimen>
+    <dimen name="ScheduleDetailConferenceDescription">15sp</dimen>
+
+<!--    item_schedule.xml -->
+
+    <dimen name="conferenceScheduleItemInnerGap">10dp</dimen>
+    <dimen name="scheduleTagInnerPadding">3dp</dimen>
+
+    <dimen name="scheduleConferenceTitle">20sp</dimen>
+    <dimen name="scheduleConferenceSpeakerName">15sp</dimen>
+    <dimen name="itemScheduleHour">30sp</dimen>
+
+<!--    fragment_location.xml -->
+
+<!--    fragment_location_detail_dialog.xml -->
+
 </resources>
