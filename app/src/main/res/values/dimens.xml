@@ -54,7 +54,6 @@
 <!--    item_schedule.xml -->
 
     <dimen name="conferenceScheduleItemInnerGap">10dp</dimen>
-    <dimen name="scheduleTagInnerPadding">3dp</dimen>
 
     <dimen name="scheduleConferenceTitle">20sp</dimen>
     <dimen name="scheduleConferenceSpeakerName">15sp</dimen>
@@ -63,5 +62,12 @@
 <!--    fragment_location.xml -->
 
 <!--    fragment_location_detail_dialog.xml -->
+    <dimen name="LocationDetailImageHeight">200dp</dimen>
+    <dimen name="LocationDetailIconHeight">40dp</dimen>
+    <dimen name="LocationDetailSubTextMarginLeft">20dp</dimen>
+    <dimen name="LocationDetailLayoutMargin">15dp</dimen>
+
+    <dimen name="LocationDetailTitle">20sp</dimen>
+    <dimen name="DetailLocationSubtext">12sp</dimen>
 
 </resources>

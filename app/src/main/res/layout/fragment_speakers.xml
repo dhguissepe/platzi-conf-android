@@ -6,7 +6,7 @@
     tools:context=".ui.SpeakerFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvSpeaker"
+        android:id="@+id/rvSpeakers"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

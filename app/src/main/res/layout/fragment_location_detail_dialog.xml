@@ -1,14 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragments.LocationDetailDialogFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Toolbar
+            android:id="@+id/tbLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="?attr/actionBarSize">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-</FrameLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/LocationDetailImageHeight"
+                    android:src="@drawable/platzi_conf_2"
+                    android:scaleType="centerCrop"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/LocationDetailLayoutMargin">
+
+                        <TextView
+                            android:id="@+id/tvDetailLocationName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nombre del lugar"
+                            android:textSize="@dimen/LocationDetailTitle"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center|left">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/LocationDetailIconHeight"
+                                android:src="@drawable/ic_baseline_location_on_24" />
+                            <TextView
+                                android:id="@+id/tvDetailLocationAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dirección del lugar"
+                                android:textSize="@dimen/DetailLocationSubtext"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_marginLeft="@dimen/LocationDetailSubTextMarginLeft" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimary"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center|left">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/LocationDetailIconHeight"
+                                android:src="@drawable/ic_baseline_local_phone_24" />
+                            <TextView
+                                android:id="@+id/tvDetailLocationPhone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Teléfono del lugar"
+                                android:textSize="@dimen/DetailLocationSubtext"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_marginLeft="@dimen/LocationDetailSubTextMarginLeft"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimary"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center|left">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/LocationDetailIconHeight"
+                                android:src="@drawable/ic_baseline_link_24" />
+                            <TextView
+                                android:id="@+id/tvDetailLocationWebsite"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sitio web del lugar"
+                                android:textSize="@dimen/DetailLocationSubtext"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_marginLeft="@dimen/LocationDetailSubTextMarginLeft"/>
+                        </LinearLayout>
+                    </LinearLayout>
+            </LinearLayout>
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
