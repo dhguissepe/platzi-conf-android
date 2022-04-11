@@ -1,12 +1,12 @@
-package com.dhguissepe.platzi.conf.ui.activities
+package com.dhguissepe.platzi.conf.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dhguissepe.platzi.conf.R
 
-class SplashScreenActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash_screen)
+        setContentView(R.layout.activity_main)
     }
 }

@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PlatziConf">
-        <activity android:name=".ui.activities.SplashScreenActivity"></activity>
+        <activity android:name="com.dhguissepe.platzi.conf.view.ui.activities.SplashScreenActivity"></activity>
         <!-- Toda pantalla de nuestra aplicación es considerada una activity. Y se registra aquí. -->
-        <activity android:name=".MainActivity">
+        <activity android:name=".view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
