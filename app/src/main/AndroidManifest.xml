@@ -11,7 +11,7 @@
         android:theme="@style/Theme.PlatziConf">
         <activity android:name="com.dhguissepe.platzi.conf.view.ui.activities.SplashScreenActivity"></activity>
         <!-- Toda pantalla de nuestra aplicación es considerada una activity. Y se registra aquí. -->
-        <activity android:name=".view.MainActivity">
+        <activity android:name=".view.ui.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

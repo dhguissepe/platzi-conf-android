@@ -1,4 +1,4 @@
-package com.dhguissepe.platzi.conf.view
+package com.dhguissepe.platzi.conf.view.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
