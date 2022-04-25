@@ -12,7 +12,7 @@
 
     <!-- lo que viene a continuación es la estructura de carga de la aplicación -->
     <RelativeLayout
-        android:id="@+id/rlBase"
+        android:id="@+id/rlBaseSpeakers"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
